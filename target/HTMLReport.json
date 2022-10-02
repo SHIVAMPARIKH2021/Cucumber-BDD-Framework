@@ -1,0 +1,239 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-10-02T21:41:04.543Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4035900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ca.amazon.apphooks.AppHooks.getProperty()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1398872400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ca.amazon.apphooks.AppHooks.getBrowser()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "SingIn button",
+        "description": "",
+        "id": "signin;singin-button",
+        "after": [
+          {
+            "result": {
+              "duration": 1000400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ca.amazon.apphooks.AppHooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 164003900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ca.amazon.apphooks.AppHooks.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 436758800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User should be on SignIn Page",
+            "match": {
+              "location": "ca.amazon.stepdefinitions.SignIn.user_should_be_on_sign_in_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1694247000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User mouse hover on sign in menu",
+            "match": {
+              "location": "ca.amazon.stepdefinitions.SignIn.user_mouse_hover_on_sign_in_menu()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 860289200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Click on the Sign in button",
+            "match": {
+              "location": "ca.amazon.stepdefinitions.SignIn.click_on_the_sign_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 28997600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Page title should be \"Amazon Sign In\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Amazon Sign In\"",
+                  "offset": 21
+                }
+              ],
+              "location": "ca.amazon.stepdefinitions.SignIn.page_title_should_be(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-10-02T21:41:09.192Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "ca.amazon.apphooks.AppHooks.getProperty()"
+            }
+          },
+          {
+            "result": {
+              "duration": 891546700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ca.amazon.apphooks.AppHooks.getBrowser()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Sing in with credentials",
+        "description": "",
+        "id": "signin;sing-in-with-credentials",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "ca.amazon.apphooks.AppHooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 183001600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ca.amazon.apphooks.AppHooks.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 392037400,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User should be on SignIn Page",
+            "match": {
+              "location": "ca.amazon.stepdefinitions.SignIn.user_should_be_on_sign_in_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2876565900,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User enter the username \"sp1612eeece1@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"sp1612eeece1@gmail.com\"",
+                  "offset": 24
+                }
+              ],
+              "location": "ca.amazon.stepdefinitions.SignIn.user_enter_the_username(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 141599400,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User click on sign in button",
+            "match": {
+              "location": "ca.amazon.stepdefinitions.SignIn.user_click_on_sign_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 542234900,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User should be redirected to SignInRedirect page",
+            "match": {
+              "location": "ca.amazon.stepdefinitions.SignIn.user_should_be_redirected_to_sign_in_redirect_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5024300,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Page title of SignInRedirect  page should be \"Amazon Sign In\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Amazon Sign In\"",
+                  "offset": 45
+                }
+              ],
+              "location": "ca.amazon.stepdefinitions.SignIn.page_title_of_sign_in_redirect_page_should_be(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Signin",
+    "description": "",
+    "id": "signin",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/ca/amazon/features/SignIn.feature",
+    "tags": []
+  }
+]
