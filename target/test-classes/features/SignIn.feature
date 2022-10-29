@@ -1,13 +1,13 @@
 # Always write 'Feature:' keyword in feature file
 Feature: Signin 
 
-Scenario: SingIn button
+Scenario: Signin button
 Given User should be on SignIn Page
 When User mouse hover on sign in menu
 And Click on the Sign in button
 Then Page title should be "Amazon Sign In"
 
-Scenario: Sing in with credentials
+Scenario: Signin with credentials
 Given User should be on SignIn Page
 When User enter the username "sp1612eeece1@gmail.com" 
 And User click on sign in button

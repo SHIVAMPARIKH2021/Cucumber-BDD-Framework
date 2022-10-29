@@ -10,7 +10,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class DriverFactory {
 
 	public WebDriver driver;
-	protected static Logger log = Logger.getLogger(DriverFactory.class);
+	private static Logger log = Logger.getLogger(DriverFactory.class);
 	
 	public static ThreadLocal<WebDriver> threadLocalDriver = new ThreadLocal<>();
 	
@@ -24,7 +24,7 @@ public class DriverFactory {
 		if(browser.equalsIgnoreCase("Chrome")) {
 			WebDriverManager.chromedriver().setup();
 			threadLocalDriver.set(new ChromeDriver());
-			log.info("Connecting with 'Chrome' Browser");
+			log.warn("Connecting with 'Chrome' Browser");
 		}
 		
 		else if(browser.equalsIgnoreCase("Edge")) {

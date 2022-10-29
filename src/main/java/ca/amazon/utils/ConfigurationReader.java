@@ -16,7 +16,7 @@ public class ConfigurationReader {
 	public Properties initialiseProperties() {
 		prop = new Properties();
 		try {
-			file = new FileInputStream("C:\\Users\\shiva\\eclipse-workspace\\amazon\\src\\test\\resources\\ca\\amazon\\configuration\\config.properties");
+			file = new FileInputStream("C:\\Users\\shiva\\eclipse-workspace\\amazon\\src\\test\\resources\\configuration\\config.properties");
 			prop.load(file);
 		} catch (IOException e) {
 			e.printStackTrace();

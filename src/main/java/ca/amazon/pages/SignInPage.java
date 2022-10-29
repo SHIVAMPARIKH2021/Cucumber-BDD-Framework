@@ -12,8 +12,8 @@ public class SignInPage {
 	 private static Actions action;
 
 	 //1.By Locators
-	 private By SignInDropDown = By.xpath("//span[text()= 'Hello, sign in']");
-	 private By SignInButton = By.xpath("//span[text()='Sign in']");
+	 private By SignInDropDown = By.xpath("//span[text()='Hello, sign in']");
+	 private By SignInButton = By.xpath("//*[@id='nav-flyout-ya-signin']/a/span");
 	 private By EmailorMobile = By.id("ap_email");
 	 private By ContinueButton = By.xpath("//input[@tabindex='5'and@id='continue']");
     
@@ -26,6 +26,7 @@ public class SignInPage {
 	 //3. Page acitons: methods to create Test Cases
 	 public void signinDropDown() throws InterruptedException{
 		action = new Actions(driver);
+		driver.manage().timeouts().implicitlyWait(5000, TimeUnit.MILLISECONDS);
 		action.moveToElement(driver.findElement(SignInDropDown)).build().perform();
 	 }
 	 

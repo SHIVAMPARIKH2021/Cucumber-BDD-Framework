@@ -7,8 +7,9 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features="C:\\Users\\shiva\\eclipse-workspace\\amazon\\src\\test\\resources\\ca\\amazon\\features",
+		features="C:\\Users\\shiva\\eclipse-workspace\\amazon\\src\\test\\resources\\features",
 		glue= {"ca.amazon.stepdefinitions","ca.amazon.apphooks"},
+		//dryRun=true,
         plugin= {
 		"pretty","json:target/HTMLReport.json"
 		}
