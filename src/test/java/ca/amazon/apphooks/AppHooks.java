@@ -15,7 +15,6 @@ import io.cucumber.java.Scenario;
 
 public class AppHooks {
 
-//AppHooks
 	private WebDriver driver;
 	private DriverFactory driverFactory;
 	private ConfigurationReader configReader;
